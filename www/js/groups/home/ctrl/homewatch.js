@@ -121,6 +121,7 @@ define([
         var Ferror = function(){
             console.log("error")
             console.log("-- refresh --")
+            App.function.loading(true);
         }
 
         var save_id_video   = function(id){

@@ -55,6 +55,7 @@ define([
         var Ferror = function(){
             console.log("error")
             console.log("-- refresh --")
+            initdata();
         }
 
     }
