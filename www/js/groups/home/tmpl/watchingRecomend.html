@@ -1,0 +1,13 @@
+{{#each lst}}
+<div class="item_video_recom" id="video_{{videoId}}">
+    {{#each videoThumbnails}}
+        {{#if @first}}
+            <img class="img_vid_recom" src="{{{url}}}"/>
+        {{/if}}
+    {{/each}}
+    <div class="info_vid_recom">
+        <p class="title_vid_recom" style="color: white;">{{title}}</p>
+        <p class="nameacc_recom">{{author}}</p>
+    </div>
+</div>
+{{/each}}

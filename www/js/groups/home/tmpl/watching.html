@@ -1,0 +1,38 @@
+<button class="btn_back" id="btn_back" ><img class="backimg" src="/www/assets/arrow.png" alt=""></button>
+<button class="btn_scroll_down" id="btn_scroll_down" >
+
+      <svg class="scroll_down" xmlns="http://www.w3.org/2000/svg" fill="grey" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+      <!-- img class="scroll_down" src="/www/assets/arrowdown.png" alt=""> -->
+</button>
+<div class="content_wrap" id="vid_wrap">
+    {{{data.url}}}
+    <div class="watch_info">
+        <div class="wrap_name">
+            <p class="name_video">{{data.title}}</p>
+        </div>
+        <div class="wrap_author">
+            <div class="author_img">
+                <img src="{{data.authorImg.url}}" style="width: 40px; height: 40px; border-radius: 50px;"/>
+            </div>
+            <div class="wrap_author_info">
+                <p class="author_name">{{data.author}}</p>
+                <p class="author_sub">{{data.subcri}}</p>
+            </div>
+        </div>
+        <div class="wrap_pub">
+            <p class="public_time">{{data.public}}</p>
+        </div>
+        {{#if data.isSave}}
+            <button class="save_btn save" id="save_{{data.id}}"><img style="width: 18px;height: 18px;" src="/www/assets/save.png"/><p>Save</p></button>
+            <button class="unsave_btn unsave" id="save_{{data.id}}" style="display: none;"><img style="width: 18px;height: 18px;" src="/www/assets/unsave.png"/><p>Unsave</p></button>
+        {{else}}
+            <button class="save_btn save" id="save_{{data.id}}" style="display: none;"><img style="width: 18px;height: 18px;" src="/www/assets/save.png"/><p>Save</p></button>
+            <button class="unsave_btn unsave" id="save_{{data.id}}" style="display: flex;"><img style="width: 18px;height: 18px;" src="/www/assets/unsave.png"/><p>Unsave</p></button>
+        {{/if}}
+    </div>
+    <div class="recom_vid_lst">
+        
+    </div>
+</div>
