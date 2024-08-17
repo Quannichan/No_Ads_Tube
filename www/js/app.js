@@ -88,6 +88,7 @@ var InitApp     = function(
     App.controller.commonRoute  = new CommonRoute()
 
     App.function.loading       = initLoading
+
 }
 
 var showApp = function(){

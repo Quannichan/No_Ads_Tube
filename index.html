@@ -23,6 +23,19 @@
     </div>
 
     <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12' || 
+                (event.ctrlKey && event.shiftKey && event.key === 'I') || 
+                (event.ctrlKey && event.key === 'U')) {
+                event.preventDefault();
+                console.log("---Prevent---");
+            }
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            console.log("---Prevent---");
+        });
         var VIEW = "HOME_VI";
     </script>
     
