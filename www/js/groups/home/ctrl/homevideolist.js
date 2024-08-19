@@ -49,7 +49,7 @@ define([
 
         var search_query        = function(s){
             App.function.loading(true);
-            App.network.send_ajax_params_get(App.routes.BE_HOME + App.routes.BE_SEARCH, [`q=${s}`], bindDatatoView,Ferror)
+            App.network.send_ajax_params_get(App.routes.BE_HOME + App.routes.BE_SEARCH, [`q=${s} mới nhất`], bindDatatoView,Ferror)
         }
 
         var Ferror = function(){
